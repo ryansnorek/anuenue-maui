@@ -15,6 +15,7 @@ export default function Home() {
                             <div className="text">
                                 <h2>{item.name}</h2>
                                 <p>{item.description}</p>
+                                <p>{item.price}</p>
                             </div>
                         </div>
                     );

@@ -57,19 +57,6 @@ export const data = [
       price: 6,
     },
     {
-      name: "Pumpkin Muffins",
-      id: 424,
-      keyDescription: "Moist, warm, cute",
-      sweet: 6,
-      salty: 6,
-      chewy: 6,
-      img:"",
-      sizes: ["small"],
-      description:
-        "Dusted with sugar on top but depraved at the core. Use protection or you'll fall in love.",
-      price: 6,
-    },
-    {
       name: "Power Bitch Balls",
       id: 425,
       keyDescription: "Chewy, scrumcious",
@@ -113,6 +100,3 @@ export const data = [
     },
   ];
 
-  {/* <form>
-  <input name="pic" capture="environment" accept="images/*" type="file" alt=""/>
-</form> */}
