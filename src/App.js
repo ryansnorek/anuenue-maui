@@ -1,11 +1,14 @@
+import { Routes, Route } from "react-router-dom";
+import Home from "./components/Home";
 
 
 export default function App() {
   return (
     <div className="wrapper">
-      <form>
-        <input name="pic" capture="environment" accept="images/*" type="file" alt=""/>
-      </form>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/home" element={<Home/>}/>
+      </Routes>
     </div>
   );
 }
