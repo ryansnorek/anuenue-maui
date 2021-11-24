@@ -35,7 +35,7 @@ header {
   position: fixed;
   top: 0;
   z-index: 1000;
-  border-bottom: 1px solid grey;
+  box-shadow: 0 0 6px rgb(209, 207, 207);
   padding-bottom: 5%;
   backdrop-filter: grayscale(90%) blur(2px);
 }
