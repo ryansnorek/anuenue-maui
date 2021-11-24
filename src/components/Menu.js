@@ -10,8 +10,8 @@ export default function Menu({ setViewingItem }) {
         <div className="menu">
             {data.map(item => {
                 return (
-                    <div className="item">
-                        <div className="image" onClick={() => handleClick(item.id)}>
+                    <div className="item" onClick={() => handleClick(item.id)}>
+                        <div className="image">
                             <img src={item.img} alt={item.img}/>
                         </div>
                         <div className="text">

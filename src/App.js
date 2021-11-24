@@ -7,7 +7,11 @@ export default function App() {
     <div className="wrapper">
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/home" element={<Home/>}/>
+        <Route path="/shop" element={<Home/>}/>
+        <Route path="/login" />
+        <Route path="/register" />
+        <Route path="/bag" />
+        <Route path="/about" />
       </Routes>
     </div>
   );
