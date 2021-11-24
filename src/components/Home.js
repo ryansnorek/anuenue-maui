@@ -1,4 +1,3 @@
-import Header from "./Header";
 import DisplayItem from "./DisplayItem";
 import Menu from "./Menu";
 import { useState } from "react";
@@ -8,7 +7,6 @@ export default function Home() {
 
     return (
         <div>
-           <Header/>
            <Menu setViewingItem={setViewingItem}/>
            {viewingItem && <DisplayItem viewingItem={viewingItem} setViewingItem={setViewingItem}/>}
         </div>
