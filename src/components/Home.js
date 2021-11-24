@@ -1,26 +1,16 @@
-import { data } from "../data";
 import Header from "./Header";
+import DisplayItem from "./DisplayItem";
+import Menu from "./Menu";
+import { useState } from "react";
 
 export default function Home() {
+    const [viewingItem, setViewingItem] = useState(false); 
+
     return (
         <div>
            <Header/>
-           <div className="menu">
-                {data.map(item => {
-                    return (
-                        <div className="item">
-                            <div className="image">
-                                <img src={item.img} alt={item.img}/>
-                            </div>
-                            <div className="text">
-                                <h2>{item.name}</h2>
-                                <p>{item.description}</p>
-                                <p>{item.price}</p>
-                            </div>
-                        </div>
-                    );
-                })}
-           </div>
+           <Menu setViewingItem={setViewingItem}/>
+           {viewingItem && <DisplayItem viewingItem={viewingItem} setViewingItem={setViewingItem}/>}
         </div>
     );
 }
