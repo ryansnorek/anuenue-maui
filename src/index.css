@@ -123,3 +123,10 @@ img { height: 100%; }
   font-size: 20px;
   margin: 0;
 }
+/* ------------------------ */
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 6%;
+  font-size: 2rem;
+}

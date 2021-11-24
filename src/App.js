@@ -5,6 +5,7 @@ import Login from "./components/Login";
 import Register from "./components/Register";
 import Bag from "./components/Bag";
 import About from "./components/About";
+import Footer from "./components/Footer";
 
 
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
           <Route path="/about" element={<About/>}/>
         </Routes>
       </div>
+      <Footer/>
     </div>
   );
 }
