@@ -5,7 +5,7 @@ export default function Login() {
     const handleChange = e => setValues({ ...values, [e.target.name]: e.target.value });
     const handleSubmit = e => {
         e.preventDefault();
-
+        
     }
 
     return (
@@ -17,14 +17,14 @@ export default function Login() {
                         type="text"
                         placeholder="username"
                         value={values.username}
-                        onchange={handleChange}
+                        onChange={handleChange}
                     />
                     <input 
                         name="password"
                         type="password"
                         placeholder="password"
                         value={values.password}
-                        onchange={handleChange}
+                        onChange={handleChange}
                     />
                     <button>login</button>
                 </form>
