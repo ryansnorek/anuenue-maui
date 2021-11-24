@@ -1,6 +1,6 @@
 import { data } from "../data";
 
-export default function Menu({ setViewingItem }) {
+export default function Menu({ setViewingItem, addToBag }) {
     const handleClick = id => {
         const clickedItem = data.filter(item => item.id === id);
         setViewingItem(clickedItem);
@@ -17,6 +17,7 @@ export default function Menu({ setViewingItem }) {
                         <div className="text">
                             <h2>{item.name}</h2>
                             <p>{item.description}</p>
+                            <button onClick={() => addToBag(item)}>add to bag</button>
                         </div>
                     </div>
                 );
