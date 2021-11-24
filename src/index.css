@@ -73,6 +73,17 @@ button {
 button:hover {
   box-shadow: 1px 1px 3px  rgb(102, 102, 102, 0.3) inset;
 }
+form {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  box-shadow: 0 0 3px inset grey;
+  outline: none;
+  margin: 2% 0;
+  border: 1px solid rgb(180, 180, 180);
+  border: none;
+}
 .bag-badge {
   position: absolute;
   background-color: rgba(80, 67, 67, 0.7);
@@ -115,6 +126,30 @@ img { height: 100%; }
 /* ------------------------ */
 .bag {
   margin-top: 10%;
+}
+/* ------------------------ */
+.login {
+  margin-top: 10%;
+  width: 100vh;
+}
+.form-container {
+  width: 50vh;
+  height: 250px;
+  background-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 2px 2px 6px rgb(209, 207, 207);
+  display: flex;
+  align-items: center;
+}
+.login form {
+  
+}
+.login input {
+  font-size: 2rem;
+}
+.login button {
+  font-size: 1.6rem;
+  padding: 0 5%;
+  margin-top: 5%;
 }
 /* ------------------------ */
 .display-box {
