@@ -7,7 +7,7 @@ export default function Home({ bag, setBag }) {
     
 
     const addToBag = item => setBag([ ...bag, item ])
-    console.log(bag)
+
     return (
         <div>
            <Menu setViewingItem={setViewingItem} addToBag={addToBag}/>

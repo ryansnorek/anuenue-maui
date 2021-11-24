@@ -21,7 +21,7 @@ export default function App() {
           <Route path="/shop" element={<Home bag={bag} setBag={setBag}/>}/>
           <Route path="/login" element={<Login/>}/>
           <Route path="/register" element={<Register/>} />
-          <Route path="/bag" element={<Bag/>}/>
+          <Route path="/bag" element={<Bag bag={bag} setBag={setBag}/>}/>
           <Route path="/about" element={<About/>}/>
         </Routes>
       </div>
