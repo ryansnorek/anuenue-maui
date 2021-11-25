@@ -36,7 +36,6 @@ header {
   position: fixed;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 0 6px rgb(209, 207, 207);
   background-color: transparent;
   backdrop-filter: grayscale(90%) blur(2px);
 }
@@ -83,7 +82,6 @@ input {
   padding: 0 3%;
   outline: none;
   margin: 2% 0;
-  border: 1px solid rgb(180, 180, 180);
   border: none;
 }
 .bag-badge {
@@ -106,6 +104,7 @@ input {
   flex-direction: column;
   align-items: center;
   height: 80%;
+  margin-top: -5%;
 }
 .item {
   background-color: rgba(255, 255, 255, 0.75);
@@ -197,4 +196,11 @@ img { height: 100%; }
   justify-content: center;
   padding: 6%;
   font-size: 2rem;
+}
+
+@media (max-width: 600px) {
+  .menu { margin-top: -8%;}
+}
+@media (max-width: 480px) {
+  .menu { margin-top: -10%; }
 }
